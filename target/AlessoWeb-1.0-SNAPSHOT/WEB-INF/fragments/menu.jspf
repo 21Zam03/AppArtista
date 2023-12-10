@@ -1,0 +1,40 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%
+    HttpSession session1 = request.getSession(false);
+    String usuario = null;
+    if (session1 != null) {
+        usuario = (String) session1.getAttribute("nombre");
+    }
+%>
+<header class="container-fluid">
+    <nav class="row justify-content-around" id="fila-header">
+        <div class="col-12 col-md-4 col-lg-2 contenedor-logo">
+            <img src="assets/Img/title.png" alt="LOGO">
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 contenedor-iconos">
+            <ul class="iconos">
+                <li><a href="https://www.instagram.com/alesso/" target="_blank"><img src="assets/icons/instagram.svg" class="icono-image"></a></li>
+                <li><a href="https://twitter.com/Alesso" target="_blank"><img src="assets/icons/twitter.svg" class="icono-image"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC05i95k-w8CvrtZ-yGTob7A" target="_blank"><img src="assets/icons/youtube.svg" class="icono-image"></a></li>
+                <li><a href="https://open.spotify.com/artist/4AVFqumd2ogHFlRbKIjp1t" target="_blank"><img src="assets/icons/spotify.svg" class="icono-image"></a></li>
+                <li><a href="https://www.facebook.com/AlessoOfficial/?locale=es_LA" target="_blank"><img src="assets/icons/facebook.svg" class="icono-image"></a></li>
+                <li><a href="https://www.tiktok.com/@alesso?" target="_blank"><img src="assets/icons/tiktok.svg" class="icono-image"></a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 contenedor-opciones">
+            <ul>
+                <li><a href="index.jsp">Inicio</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Tour</a></li>
+                    <% if (usuario == null) { %>
+                        <li><a href="login.jsp">Login</a></li>
+                    <%} else { %>
+                        <li><a href="upload.jsp">Upload</a></li>
+                        <button onclick="cerrarSesion();">Cerrar Sesion</button>
+                <%}%>
+            </ul>
+        </div>
+    </nav>
+</header>  

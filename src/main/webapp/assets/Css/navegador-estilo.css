@@ -1,0 +1,89 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 dic. 2023, 17:27:47
+    Author     : DELL
+*/
+header {
+    padding: 50px 0px;
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-logo img {
+    width: 60%;
+}
+
+.contenedor-iconos a {
+    text-decoration: none;
+}
+
+.contenedor-iconos li, .contenedor-opciones li {
+    display: inline-block;
+}
+
+.contenedor-iconos img {
+    width: 60px;
+    padding: 0px 20px;
+}
+
+.contenedor-opciones a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.contenedor-opciones a:hover {
+    font-weight: bold;
+}
+
+/*.alesso_title {
+    width: 120px;
+    height: 28px;
+    top: 40px;
+    left: 50px
+}
+
+nav {
+    display: inline-block;
+    width: 1000px;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+}
+
+nav ul {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+nav .iconos {
+    margin-right: 210px;
+}
+
+nav ul li {
+    font-size: 20px;
+    display: inline;
+    margin-left: 25px; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    border-bottom-style: solid;
+}
+
+.icono-image {
+    width: 20px;
+    height: 20px;
+}*/
